@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <DUT Name="SideClampVar" Id="{be9d3f90-baa8-4a51-9c57-29156999b4d9}">
+    <Declaration><![CDATA[TYPE SideClampVar :
+STRUCT
+    sv_bButtonFwd: BOOL;
+	sv_bButtonBwd: BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

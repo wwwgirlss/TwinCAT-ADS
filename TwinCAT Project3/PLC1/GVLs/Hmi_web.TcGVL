@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.18">
+  <GVL Name="Hmi_web" Id="{eae48d12-bfed-42b4-9a4e-65b8156f88d3}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+    Jog_Speed: INT;
+ Oil_Pump:BOOL;
+Jog_FxA:Jog_FxA_Type:= (
+      H_Open:= FALSE,
+      H_Open_S:= FALSE,
+      H_Close:= FALSE,
+      H_Close_S:= FALSE,
+
+      H_Hold:= FALSE,
+      H_Hold_S:= FALSE,
+
+      V_Open:= FALSE,
+      V_Open_S:= FALSE,
+      V_Close:= FALSE,
+      V_Close_S:= FALSE,
+   
+     P:= FALSE,
+      P_S:= FALSE,
+      N:= FALSE,
+      N_S:= FALSE,
+      P_Fast:= FALSE,
+      P_Fast_S:= FALSE,
+      N_Fast:= FALSE,
+      N_Fast_S:= FALSE
+    );
+ 
+ 
+Jog_FxB : Jog_FxB_Type := (
+       H_Open:= FALSE,
+      H_Open_S:= FALSE,
+      H_Close:= FALSE,
+      H_Close_S:= FALSE,
+
+      H_Hold:= FALSE,
+      H_Hold_S:= FALSE,
+
+      V_Open:= FALSE,
+      V_Open_S:= FALSE,
+      V_Close:= FALSE,
+      V_Close_S:= FALSE
+
+    
+);
+
+
+ 
+
+//右軸
+Jog_Ga: LaserJog:=( 
+     X_P:= FALSE,
+     X_N:= FALSE,
+     X_H:= FALSE,
+     Y_P:= FALSE,
+     Y_N:= FALSE,
+     Y_H:= FALSE,
+     Z_P:= FALSE,
+     Z_N:= FALSE,
+     Z_H:= FALSE,
+     Laser_Preview:=FALSE,
+     Laser_Preview_Select:= 1,
+     Laser_Blow:= FALSE,
+     Laser_Cover:= FALSE);
+//上軸
+    Jog_Gb: LaserJog:=( 
+     X_P:= FALSE,
+     X_N:= FALSE,
+     X_H:= FALSE,
+     Y_P:= FALSE,
+     Y_N:= FALSE,
+     Y_H:= FALSE,
+     Z_P:= FALSE,
+     Z_N:= FALSE,
+     Z_H:= FALSE,
+     Laser_Preview:=FALSE,
+     Laser_Preview_Select:= 1,
+     Laser_Blow:= FALSE,
+     Laser_Cover:= FALSE);
+//左軸
+    Jog_Gc: LaserJog:=( 
+     X_P:= FALSE,
+     X_N:= FALSE,
+     X_H:= FALSE,
+     Y_P:= FALSE,
+     Y_N:= FALSE,
+     Y_H:= FALSE,
+     Z_P:= FALSE,
+     Z_N:= FALSE,
+     Z_H:= FALSE,
+     Laser_Preview:=FALSE,
+     Laser_Preview_Select:= 1,
+     Laser_Blow:= FALSE,
+     Laser_Cover:= FALSE);
+//下軸
+    Jog_Gd: LaserJog:=( 
+     X_P:= FALSE,
+     X_N:= FALSE,
+     X_H:= FALSE,
+     Y_P:= FALSE,
+     Y_N:= FALSE,
+     Y_H:= FALSE,
+     Z_P:= FALSE,
+     Z_N:= FALSE,
+     Z_H:= FALSE,
+     Laser_Preview:=FALSE,
+     Laser_Preview_Select:= 1,
+     Laser_Blow:= FALSE,
+     Laser_Cover:= FALSE);
+
+
+ 	//*自動加工 */
+    Auto_Start:  BOOL;
+    //插單*/
+    Auto_OneCycle_Start:  BOOL;
+ 	// 自動流程 加工單
+	Auto_ProjectWorkOrder_uuid: STRING;
+	// 排版專案 
+    Start_WorkOrder_UUID: STRING;
+	// 加工data_uuid
+    Process_Data_UUID: STRING;
+	// 雷標動作啟動 
+    Process_Data_UUID_Start: BOOL;
+ 
+ 
+ 
+
+    //動力滾輪
+    Roller_Fwd:  BOOL;
+    Roller_Fwd_S:  BOOL;
+    //動力滾輪反轉
+    Roller_Rev:  BOOL;
+    Roller_Rev_S:  BOOL;
+
+    //滾輪上浮
+    Roller_Up:  BOOL;
+    Roller_Up_S:  BOOL;
+    //滾輪下降
+    Roller_Down:  BOOL;
+    Roller_Down_S:  BOOL;
+
+    //入口料架-出口料架(0/1)*/
+    Site_Select:  INT;
+    //料架速率(0/1)*/
+    Speed_Select:  INT;
+
+    // 指定橫移->用二進位儲存 */
+    Module_Select:  INT;
+
+    //料架動作-台車前進*/
+    Car_Rev:  BOOL;
+    Car_Rev_S:  BOOL;
+    //料架動作-台車後退
+    Car_Fwd:  BOOL;
+    Car_Fwd_S:  BOOL;
+    //料架動作-台車上升
+    Car_Up: BOOL;
+    Car_Up_S:  BOOL;
+    //料架動作-台車中間
+    Car_Midd:  BOOL;
+    Car_Midd_S:  BOOL;
+
+    //料架動作-台車下降
+    Car_Down:  BOOL;
+    Car_Down_S:  BOOL;
+
+    //料架動作-靠邊
+    Pull_over_Push: BOOL;
+    Pull_over_Push_S: BOOL;
+
+    //料架動作-頂料柱上升
+    StopPin_Up: BOOL;
+    StopPin_Up_S:  BOOL;
+
+    //料架動作-頂料柱下降
+    StopPin_Down: BOOL;
+    StopPin_Down_S: BOOL;
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

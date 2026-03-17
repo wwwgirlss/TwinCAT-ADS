@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <DUT Name="LaserJog" Id="{de13cdd7-4f06-4d04-b5f0-fde95618d6cb}">
+    <Declaration><![CDATA[TYPE LaserJog :
+STRUCT
+	 X_P: BOOL;
+     X_N: BOOL;
+     X_H: BOOL;
+	 
+	 
+	 X_P_S: BOOL;
+     X_N_S: BOOL;
+     X_H_S: BOOL;
+	 
+     Y_P: BOOL;
+     Y_N: BOOL;
+     Y_H: BOOL;
+	 
+	 
+     Y_P_S: BOOL;
+     Y_N_S: BOOL;
+     Y_H_S: BOOL;
+	 
+     Z_P: BOOL;
+     Z_N: BOOL;
+     Z_H: BOOL;
+	 
+     Z_P_S: BOOL;
+     Z_N_S: BOOL;
+     Z_H_S: BOOL;
+     Laser_Preview:BOOL;
+     Laser_Preview_Select: INT	;
+     Laser_Blow: BOOL;
+     Laser_Cover: BOOL;
+
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

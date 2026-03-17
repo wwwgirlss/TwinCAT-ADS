@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <GVL Name="GVL_Main" Id="{5fb68f1b-1261-47ea-ae1e-737ac607893f}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+    g_bStart     : BOOL := FALSE;
+    g_iCounter   : INT := 0;
+    g_fSpeed     : REAL := 1.5;
+    testBoolean     : BOOL := FALSE;
+	
+ g_machineStatus : MyCustomType := (
+        isActive := FALSE,
+        speed    := 0.0,
+        counter  := 0
+    );
+	
+
+LaserVars1:LaserVar := (
+sv_bPLCHandShaking:= FALSE,
+sv_bIPCHandShaking:= FALSE
+    );
+	LaserVars2:LaserVar := (
+sv_bPLCHandShaking:= FALSE,
+sv_bIPCHandShaking:= FALSE
+    );
+	LaserVars3:LaserVar := (
+sv_bPLCHandShaking:= FALSE,
+sv_bIPCHandShaking:= FALSE
+    );
+	LaserVars4:LaserVar := (
+sv_bPLCHandShaking:= FALSE,
+sv_bIPCHandShaking:= FALSE
+    );
+
+	
+SideClampVars1:SideClampVar := (
+sv_bButtonFwd:= FALSE,
+sv_bButtonBwd:= FALSE);
+	
+SideClampVars2:SideClampVar := (
+sv_bButtonFwd:= FALSE,
+sv_bButtonBwd:= FALSE
+ );
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

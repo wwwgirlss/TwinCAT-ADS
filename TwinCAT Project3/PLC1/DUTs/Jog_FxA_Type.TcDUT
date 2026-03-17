@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <DUT Name="Jog_FxA_Type" Id="{8ecab233-1569-4116-90bd-1131c98c6bea}">
+    <Declaration><![CDATA[TYPE Jog_FxA_Type :
+STRUCT
+	
+ H_Open:  BOOL;
+ H_Open_S:  BOOL;
+ H_Close:  BOOL;
+ H_Close_S:  BOOL;
+
+ H_Hold:  BOOL;
+ H_Hold_S:  BOOL;
+
+ V_Open:  BOOL;
+ V_Open_S: BOOL;
+ V_Close: BOOL;
+ V_Close_S: BOOL;
+  P : BOOL;
+ P_S : BOOL;
+ N : BOOL;
+ N_S : BOOL;
+ P_Fast : BOOL;
+ P_Fast_S : BOOL;
+ N_Fast : BOOL;
+ N_Fast_S : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

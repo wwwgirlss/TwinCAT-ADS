@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <DUT Name="LaserVar" Id="{8c9e7e94-9a3c-42b3-bca6-728a865f69d6}">
+    <Declaration><![CDATA[TYPE LaserVar :
+STRUCT
+    sv_bPLCHandShaking : BOOL;
+    sv_bIPCHandShaking    : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
