@@ -124,6 +124,8 @@ Jog_Ga: LaserJog:=(
     Process_Data_UUID: STRING;
 	// 雷標動作啟動 
     Process_Data_UUID_Start: BOOL;
+	// 預覽模式
+	Preview_Enable:Bool;
  
  
  
