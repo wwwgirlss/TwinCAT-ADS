@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TcBootProject CreateTime="2026-03-27T15:38:10" Platform="TwinCAT RT (x64)">
+<TcBootProject CreateTime="2026-03-27T17:27:57" Platform="TwinCAT RT (x64)">
 	<System>
 		<LockedMemSize>33554432</LockedMemSize>
 		<AffinityMask>#x1</AffinityMask>
@@ -136,7 +136,7 @@
 	<ProjectInfo>
 		<ProjectName>TwinCAT Project3</ProjectName>
 		<ProjectGuid>{FAC0DB3E-4281-4ECF-94BA-D69A04196B35}</ProjectGuid>
-		<ConfigurationFile>D:\SLM-TwinCAT-HMI-ADS\TwinCAT-ADS\TwinCAT Project3\TwinCAT Project3.tsproj</ConfigurationFile>
+		<ConfigurationFile>D:\SLM-TwinCAT-HMI-ADS-5\TwinCAT-ADS\TwinCAT Project3\TwinCAT Project3.tsproj</ConfigurationFile>
 		<DataTypes/>
 		<PlcProjects/>
 		<Tasks/>
